@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Flow - Sapne Set Karo, Future Flow Karo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #004e92, #000428);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #002855;
+      padding: 0.8rem 1.6rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #e0e0e0;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .feature {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      flex: 1 1 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    }
+    .feature h3 {
+      color: #002855;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature img.icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 0.5rem;
+    }
+    .feature img.full {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    .form-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .form-container h3 {
+      text-align: center;
+      color: #002855;
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .form-container button {
+      background: #002855;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #002855;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="FUTURE FLOW.png" alt="Future Flow Logo" />
+    <h1>Future Flow</h1>
+    <p><em>Sapne set karo, Future Flow karo</em></p>
+    <p>AI-powered financial tools to guide your future.</p>
+    <a href="#form" class="cta-button">Get Started</a>
+  </header>
+
+  <section class="section">
+    <h2 style="text-align:center;">Key Features</h2>
+    <div class="features">
+      <div class="feature" data-aos="fade-up">
+        <img src="calendar-days-solid.svg" alt="Smart Budget" class="icon" />
+        <h3>Smart Budget Assistant</h3>
+        <p>Auto-track, categorize, and plan your monthly expenses with ease.</p>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <img src="book-solid.svg" alt="Learning Hub" class="icon" />
+        <h3>Personalized Learning Hub</h3>
+        <p>Learn everything about money, from saving to investing — powered by AI.</p>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <img src="bullseye-solid.svg" alt="Goal Setting" class="icon" />
+        <h3>Goal Setting & Prediction</h3>
+        <p>Set dreams, and let our AI guide you toward achieving them.</p>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <img src="person-solid.svg" alt="Financial Adviser" class="icon" />
+        <h3>Human Financial Adviser</h3>
+        <p>Schedule calls with certified professionals for personalized financial advice.</p>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <img src="robot-solid.svg" alt="AI Coach" class="icon" />
+        <h3>AI-Powered Financial Coach</h3>
+        <p>Personalized, intelligent financial advice at your fingertips.</p>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <img src="money-check-dollar-solid.svg" alt="Money Tracking" class="icon" />
+        <h3>Effortless Money Tracking</h3>
+        <p>Seamless insights into your spending habits.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section form-container" id="form">
+    <h3>Tell Us About Yourself</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="number" placeholder="Age" required />
+      <input type="text" placeholder="Business/Occupation" />
+      <input type="number" placeholder="Monthly Savings (₹)" />
+      <input type="number" placeholder="Bank Balance (₹)" />
+      <input type="number" placeholder="Current Investments (₹)" />
+      <textarea placeholder="Other financial info you'd like to share..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="section" id="information">
+    <h2 style="text-align:center;">Stay Informed</h2>
+    <div class="features">
+      <div class="feature" data-aos="zoom-in">
+        <h3>Stock Market News</h3>
+        <p>We bring you the latest headlines and updates from the Indian and global financial markets.</p>
+        <img src="undraw_investing_kncz.png" alt="Stock Market News Illustration" class="full">
+      </div>
+      <div class="feature" data-aos="zoom-in">
+        <h3>Informative Finance Videos</h3>
+        <p>Access bite-sized, easy-to-understand videos explaining personal finance, investing, taxes, and more.</p>
+        <img src="undraw_finance_m6vw.png" alt="Finance Videos Illustration" class="full">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2 style="text-align:center;">What Users Are Saying</h2>
+    <div class="features">
+      <div class="feature" data-aos="fade-up">
+        <p>"Future Flow gave me control over my finances like never before!"</p>
+        <strong>- Riya, 24</strong>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <p>"I finally feel confident saving and investing."</p>
+        <strong>- Arjun, 29</strong>
+      </div>
+      <div class="feature" data-aos="fade-up">
+        <p>"The AI coach is like having a money expert in my pocket."</p>
+        <strong>- Neha, 35</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <h2 style="text-align:center;">Frequently Asked Questions</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>How does the AI coach work?</h3>
+        <p>It analyzes your spending, savings, and goals to offer smart, personalized advice.</p>
+      </div>
+      <div class="feature">
+        <h3>Is my financial data safe?</h3>
+        <p>Yes. We use bank-level encryption and never share your data without consent.</p>
+      </div>
+      <div class="feature">
+        <h3>Is Future Flow free?</h3>
+        <p>Future Flow will offer both free and premium plans to suit different needs.</p>
+      </div>
+      <div class="feature">
+        <h3>Who is Future Flow for?</h3>
+        <p>Anyone aged 18–50 looking to take control of their money — students, professionals, freelancers, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Get in Touch</h2>
+    <p>Email us at <a href="mailto:futureflowweb@gmail.com">futureflowweb@gmail.com</a> to join the conversation or partner with us.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Future Flow. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
